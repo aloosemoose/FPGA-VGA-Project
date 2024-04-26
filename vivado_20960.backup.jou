@@ -1,0 +1,543 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Apr 16 13:29:30 2024
+# Process ID: 20960
+# Current directory: H:/version_one 1/version_one
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13016 H:\version_one 1\version_one\version_one.xpr
+# Log file: H:/version_one 1/version_one/vivado.log
+# Journal file: H:/version_one 1/version_one\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {H:/version_one 1/version_one/version_one.xpr}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{H:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_1_1/blk_mem_gen_1.xci}}] -no_script -reset -force -quiet
+remove_files  -fileset blk_mem_gen_1 {{H:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_1_1/blk_mem_gen_1.xci}}
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_1 -dir {h:/version_one 1/version_one/version_one.srcs/sources_1/ip}
+set_property -dict [list CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Write_Width_A {12} CONFIG.Write_Depth_A {1369} CONFIG.Read_Width_A {12} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {12} CONFIG.Read_Width_B {12} CONFIG.Load_Init_File {true} CONFIG.Coe_File {H:/version_one 1/version_one/images/orb.coe} CONFIG.Port_A_Write_Rate {0}] [get_ips blk_mem_gen_1]
+generate_target {instantiation_template} [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_1_2/blk_mem_gen_1.xci}}]
+generate_target all [get_files  {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_1_2/blk_mem_gen_1.xci}}]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_1] }
+export_ip_user_files -of_objects [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_1_2/blk_mem_gen_1.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_1_2/blk_mem_gen_1.xci}}]
+launch_runs -jobs 6 blk_mem_gen_1_synth_1
+export_simulation -of_objects [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_1_2/blk_mem_gen_1.xci}}] -directory {H:/version_one 1/version_one/version_one.ip_user_files/sim_scripts} -ip_user_files_dir {H:/version_one 1/version_one/version_one.ip_user_files} -ipstatic_source_dir {H:/version_one 1/version_one/version_one.ip_user_files/ipstatic} -lib_map_path [list {modelsim=H:/version_one 1/version_one/version_one.cache/compile_simlib/modelsim} {questa=H:/version_one 1/version_one/version_one.cache/compile_simlib/questa} {riviera=H:/version_one 1/version_one/version_one.cache/compile_simlib/riviera} {activehdl=H:/version_one 1/version_one/version_one.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {H:/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property -dict [list CONFIG.Coe_File {H:/version_one 1/version_one/images/clouds.coe}] [get_ips blk_mem_gen_2]
+generate_target all [get_files  {{H:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci}}]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_2] }
+export_ip_user_files -of_objects [get_files {{H:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci}}] -no_script -sync -force -quiet
+reset_run blk_mem_gen_2_synth_1
+launch_runs -jobs 6 blk_mem_gen_2_synth_1
+export_simulation -of_objects [get_files {{H:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci}}] -directory {H:/version_one 1/version_one/version_one.ip_user_files/sim_scripts} -ip_user_files_dir {H:/version_one 1/version_one/version_one.ip_user_files} -ipstatic_source_dir {H:/version_one 1/version_one/version_one.ip_user_files/ipstatic} -lib_map_path [list {modelsim=H:/version_one 1/version_one/version_one.cache/compile_simlib/modelsim} {questa=H:/version_one 1/version_one/version_one.cache/compile_simlib/questa} {riviera=H:/version_one 1/version_one/version_one.cache/compile_simlib/riviera} {activehdl=H:/version_one 1/version_one/version_one.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property -dict [list CONFIG.Coe_File {H:/version_one 1/version_one/images/heartimage.coe}] [get_ips blk_mem_gen_0]
+generate_target all [get_files  {{H:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_0] }
+export_ip_user_files -of_objects [get_files {{H:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}] -no_script -sync -force -quiet
+reset_run blk_mem_gen_0_synth_1
+launch_runs -jobs 6 blk_mem_gen_0_synth_1
+export_simulation -of_objects [get_files {{H:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}] -directory {H:/version_one 1/version_one/version_one.ip_user_files/sim_scripts} -ip_user_files_dir {H:/version_one 1/version_one/version_one.ip_user_files} -ipstatic_source_dir {H:/version_one 1/version_one/version_one.ip_user_files/ipstatic} -lib_map_path [list {modelsim=H:/version_one 1/version_one/version_one.cache/compile_simlib/modelsim} {questa=H:/version_one 1/version_one/version_one.cache/compile_simlib/questa} {riviera=H:/version_one 1/version_one/version_one.cache/compile_simlib/riviera} {activehdl=H:/version_one 1/version_one/version_one.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property -dict [list CONFIG.Write_Depth_A {1369} CONFIG.Coe_File {H:/version_one 1/version_one/images/heart_image.coe}] [get_ips blk_mem_gen_0]
+generate_target all [get_files  {{H:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_0] }
+export_ip_user_files -of_objects [get_files {{H:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}] -no_script -sync -force -quiet
+reset_run blk_mem_gen_0_synth_1
+launch_runs -jobs 6 blk_mem_gen_0_synth_1
+export_simulation -of_objects [get_files {{H:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}] -directory {H:/version_one 1/version_one/version_one.ip_user_files/sim_scripts} -ip_user_files_dir {H:/version_one 1/version_one/version_one.ip_user_files} -ipstatic_source_dir {H:/version_one 1/version_one/version_one.ip_user_files/ipstatic} -lib_map_path [list {modelsim=H:/version_one 1/version_one/version_one.cache/compile_simlib/modelsim} {questa=H:/version_one 1/version_one/version_one.cache/compile_simlib/questa} {riviera=H:/version_one 1/version_one/version_one.cache/compile_simlib/riviera} {activehdl=H:/version_one 1/version_one/version_one.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Write_Depth_A {6800} CONFIG.Coe_File {H:/version_one 1/version_one/images/orb_image.coe}] [get_ips blk_mem_gen_1]
+generate_target all [get_files  {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_1_2/blk_mem_gen_1.xci}}]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_1] }
+export_ip_user_files -of_objects [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_1_2/blk_mem_gen_1.xci}}] -no_script -sync -force -quiet
+reset_run blk_mem_gen_1_synth_1
+launch_runs -jobs 6 blk_mem_gen_1_synth_1
+export_simulation -of_objects [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_1_2/blk_mem_gen_1.xci}}] -directory {H:/version_one 1/version_one/version_one.ip_user_files/sim_scripts} -ip_user_files_dir {H:/version_one 1/version_one/version_one.ip_user_files} -ipstatic_source_dir {H:/version_one 1/version_one/version_one.ip_user_files/ipstatic} -lib_map_path [list {modelsim=H:/version_one 1/version_one/version_one.cache/compile_simlib/modelsim} {questa=H:/version_one 1/version_one/version_one.cache/compile_simlib/questa} {riviera=H:/version_one 1/version_one/version_one.cache/compile_simlib/riviera} {activehdl=H:/version_one 1/version_one/version_one.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+export_ip_user_files -of_objects  [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_1_2/blk_mem_gen_1.xci}}] -no_script -reset -force -quiet
+remove_files  -fileset blk_mem_gen_1 {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_1_2/blk_mem_gen_1.xci}}
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_1 -dir {h:/version_one 1/version_one/version_one.srcs/sources_1/ip}
+set_property -dict [list CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Write_Width_A {12} CONFIG.Write_Depth_A {6800} CONFIG.Read_Width_A {12} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {12} CONFIG.Read_Width_B {12} CONFIG.Load_Init_File {true} CONFIG.Coe_File {H:/version_one 1/version_one/images/orb_image.coe} CONFIG.Port_A_Write_Rate {0}] [get_ips blk_mem_gen_1]
+generate_target {instantiation_template} [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_1_3/blk_mem_gen_1.xci}}]
+generate_target all [get_files  {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_1_3/blk_mem_gen_1.xci}}]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_1] }
+export_ip_user_files -of_objects [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_1_3/blk_mem_gen_1.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_1_3/blk_mem_gen_1.xci}}]
+export_simulation -of_objects [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_1_3/blk_mem_gen_1.xci}}] -directory {H:/version_one 1/version_one/version_one.ip_user_files/sim_scripts} -ip_user_files_dir {H:/version_one 1/version_one/version_one.ip_user_files} -ipstatic_source_dir {H:/version_one 1/version_one/version_one.ip_user_files/ipstatic} -lib_map_path [list {modelsim=H:/version_one 1/version_one/version_one.cache/compile_simlib/modelsim} {questa=H:/version_one 1/version_one/version_one.cache/compile_simlib/questa} {riviera=H:/version_one 1/version_one/version_one.cache/compile_simlib/riviera} {activehdl=H:/version_one 1/version_one/version_one.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{H:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}] -no_script -reset -force -quiet
+remove_files  -fileset blk_mem_gen_0 {{H:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_0 -dir {h:/version_one 1/version_one/version_one.srcs/sources_1/ip}
+set_property -dict [list CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Write_Width_A {12} CONFIG.Write_Depth_A {1369} CONFIG.Read_Width_A {12} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {12} CONFIG.Read_Width_B {12} CONFIG.Load_Init_File {true} CONFIG.Coe_File {H:/version_one 1/version_one/images/heart_image.coe} CONFIG.Port_A_Write_Rate {0}] [get_ips blk_mem_gen_0]
+generate_target {instantiation_template} [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci}}]
+generate_target all [get_files  {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci}}]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_0] }
+export_ip_user_files -of_objects [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci}}]
+export_simulation -of_objects [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci}}] -directory {H:/version_one 1/version_one/version_one.ip_user_files/sim_scripts} -ip_user_files_dir {H:/version_one 1/version_one/version_one.ip_user_files} -ipstatic_source_dir {H:/version_one 1/version_one/version_one.ip_user_files/ipstatic} -lib_map_path [list {modelsim=H:/version_one 1/version_one/version_one.cache/compile_simlib/modelsim} {questa=H:/version_one 1/version_one/version_one.cache/compile_simlib/questa} {riviera=H:/version_one 1/version_one/version_one.cache/compile_simlib/riviera} {activehdl=H:/version_one 1/version_one/version_one.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{h:/version_one 1/version_one/images/orb.coe}}] -no_script -reset -force -quiet
+remove_files  {{h:/version_one 1/version_one/images/orb.coe}}
+export_ip_user_files -of_objects  [get_files {{H:/version_one 1/version_one/images/brick.coe}}] -no_script -reset -force -quiet
+remove_files  {{H:/version_one 1/version_one/images/brick.coe}}
+export_ip_user_files -of_objects  [get_files {{H:/version_one 1/version_one/images/bricks.coe}}] -no_script -reset -force -quiet
+remove_files  {{H:/version_one 1/version_one/images/bricks.coe}}
+export_ip_user_files -of_objects  [get_files {{H:/version_one 1/version_one/images/heart.coe}}] -no_script -reset -force -quiet
+remove_files  {{H:/version_one 1/version_one/images/heart.coe}}
+export_ip_user_files -of_objects  [get_files {{h:/version_one 1/version_one/images/heartimage.coe}}] -no_script -reset -force -quiet
+remove_files  {{h:/version_one 1/version_one/images/heartimage.coe}}
+export_ip_user_files -of_objects  [get_files {{H:/version_one 1/version_one/images/tnt.coe}}] -no_script -reset -force -quiet
+remove_files  {{H:/version_one 1/version_one/images/tnt.coe}}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+export_ip_user_files -of_objects  [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_1_3/blk_mem_gen_1.xci}}] -no_script -reset -force -quiet
+remove_files  {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_1_3/blk_mem_gen_1.xci}}
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_1 -dir {h:/version_one 1/version_one/version_one.srcs/sources_1/ip}
+set_property -dict [list CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Write_Width_A {12} CONFIG.Write_Depth_A {1369} CONFIG.Read_Width_A {12} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {12} CONFIG.Read_Width_B {12} CONFIG.Load_Init_File {true} CONFIG.Coe_File {H:/version_one 1/version_one/images/new_orb.coe} CONFIG.Port_A_Write_Rate {0}] [get_ips blk_mem_gen_1]
+generate_target {instantiation_template} [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_1_4/blk_mem_gen_1.xci}}]
+generate_target all [get_files  {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_1_4/blk_mem_gen_1.xci}}]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_1] }
+export_ip_user_files -of_objects [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_1_4/blk_mem_gen_1.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_1_4/blk_mem_gen_1.xci}}]
+launch_runs -jobs 6 blk_mem_gen_1_synth_1
+export_simulation -of_objects [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_1_4/blk_mem_gen_1.xci}}] -directory {H:/version_one 1/version_one/version_one.ip_user_files/sim_scripts} -ip_user_files_dir {H:/version_one 1/version_one/version_one.ip_user_files} -ipstatic_source_dir {H:/version_one 1/version_one/version_one.ip_user_files/ipstatic} -lib_map_path [list {modelsim=H:/version_one 1/version_one/version_one.cache/compile_simlib/modelsim} {questa=H:/version_one 1/version_one/version_one.cache/compile_simlib/questa} {riviera=H:/version_one 1/version_one/version_one.cache/compile_simlib/riviera} {activehdl=H:/version_one 1/version_one/version_one.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_ip_user_files -of_objects  [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci}}] -no_script -reset -force -quiet
+remove_files  {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0.xci}}
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_0 -dir {h:/version_one 1/version_one/version_one.srcs/sources_1/ip}
+set_property -dict [list CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Write_Width_A {12} CONFIG.Write_Depth_A {6800} CONFIG.Read_Width_A {12} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {12} CONFIG.Read_Width_B {12} CONFIG.Load_Init_File {true} CONFIG.Coe_File {H:/version_one 1/version_one/images/new_heart.coe} CONFIG.Port_A_Write_Rate {0}] [get_ips blk_mem_gen_0]
+generate_target {instantiation_template} [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_0_2/blk_mem_gen_0.xci}}]
+generate_target all [get_files  {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_0_2/blk_mem_gen_0.xci}}]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_0] }
+export_ip_user_files -of_objects [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_0_2/blk_mem_gen_0.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_0_2/blk_mem_gen_0.xci}}]
+launch_runs -jobs 6 blk_mem_gen_0_synth_1
+export_simulation -of_objects [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_0_2/blk_mem_gen_0.xci}}] -directory {H:/version_one 1/version_one/version_one.ip_user_files/sim_scripts} -ip_user_files_dir {H:/version_one 1/version_one/version_one.ip_user_files} -ipstatic_source_dir {H:/version_one 1/version_one/version_one.ip_user_files/ipstatic} -lib_map_path [list {modelsim=H:/version_one 1/version_one/version_one.cache/compile_simlib/modelsim} {questa=H:/version_one 1/version_one/version_one.cache/compile_simlib/questa} {riviera=H:/version_one 1/version_one/version_one.cache/compile_simlib/riviera} {activehdl=H:/version_one 1/version_one/version_one.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property -dict [list CONFIG.Coe_File {H:/version_one 1/version_one/images/purple_orb.coe}] [get_ips blk_mem_gen_1]
+generate_target all [get_files  {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_1_4/blk_mem_gen_1.xci}}]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_1] }
+export_ip_user_files -of_objects [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_1_4/blk_mem_gen_1.xci}}] -no_script -sync -force -quiet
+reset_run blk_mem_gen_1_synth_1
+launch_runs -jobs 6 blk_mem_gen_1_synth_1
+export_simulation -of_objects [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_1_4/blk_mem_gen_1.xci}}] -directory {H:/version_one 1/version_one/version_one.ip_user_files/sim_scripts} -ip_user_files_dir {H:/version_one 1/version_one/version_one.ip_user_files} -ipstatic_source_dir {H:/version_one 1/version_one/version_one.ip_user_files/ipstatic} -lib_map_path [list {modelsim=H:/version_one 1/version_one/version_one.cache/compile_simlib/modelsim} {questa=H:/version_one 1/version_one/version_one.cache/compile_simlib/questa} {riviera=H:/version_one 1/version_one/version_one.cache/compile_simlib/riviera} {activehdl=H:/version_one 1/version_one/version_one.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Coe_File {H:/version_one 1/version_one/images/purple_heart.coe}] [get_ips blk_mem_gen_0]
+generate_target all [get_files  {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_0_2/blk_mem_gen_0.xci}}]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_0] }
+export_ip_user_files -of_objects [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_0_2/blk_mem_gen_0.xci}}] -no_script -sync -force -quiet
+reset_run blk_mem_gen_0_synth_1
+launch_runs -jobs 6 blk_mem_gen_0_synth_1
+export_simulation -of_objects [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_0_2/blk_mem_gen_0.xci}}] -directory {H:/version_one 1/version_one/version_one.ip_user_files/sim_scripts} -ip_user_files_dir {H:/version_one 1/version_one/version_one.ip_user_files} -ipstatic_source_dir {H:/version_one 1/version_one/version_one.ip_user_files/ipstatic} -lib_map_path [list {modelsim=H:/version_one 1/version_one/version_one.cache/compile_simlib/modelsim} {questa=H:/version_one 1/version_one/version_one.cache/compile_simlib/questa} {riviera=H:/version_one 1/version_one/version_one.cache/compile_simlib/riviera} {activehdl=H:/version_one 1/version_one/version_one.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.Write_Depth_A {31500} CONFIG.Coe_File {H:/version_one 1/version_one/images/game_name.coe}] [get_ips blk_mem_gen_4]
+generate_target all [get_files  {{H:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_4_1/blk_mem_gen_4.xci}}]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_4] }
+export_ip_user_files -of_objects [get_files {{H:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_4_1/blk_mem_gen_4.xci}}] -no_script -sync -force -quiet
+reset_run blk_mem_gen_4_synth_1
+launch_runs -jobs 6 blk_mem_gen_4_synth_1
+export_simulation -of_objects [get_files {{H:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_4_1/blk_mem_gen_4.xci}}] -directory {H:/version_one 1/version_one/version_one.ip_user_files/sim_scripts} -ip_user_files_dir {H:/version_one 1/version_one/version_one.ip_user_files} -ipstatic_source_dir {H:/version_one 1/version_one/version_one.ip_user_files/ipstatic} -lib_map_path [list {modelsim=H:/version_one 1/version_one/version_one.cache/compile_simlib/modelsim} {questa=H:/version_one 1/version_one/version_one.cache/compile_simlib/questa} {riviera=H:/version_one 1/version_one/version_one.cache/compile_simlib/riviera} {activehdl=H:/version_one 1/version_one/version_one.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+close [ open {H:/version_one 1/version_one/version_one.srcs/sources_1/new/draw_id_numbers.v} w ]
+add_files {{H:/version_one 1/version_one/version_one.srcs/sources_1/new/draw_id_numbers.v}}
+update_compile_order -fileset sources_1
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_5 -dir {h:/version_one 1/version_one/version_one.srcs/sources_1/ip}
+set_property -dict [list CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Write_Width_A {12} CONFIG.Write_Depth_A {20000} CONFIG.Read_Width_A {12} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {12} CONFIG.Read_Width_B {12} CONFIG.Load_Init_File {true} CONFIG.Coe_File {H:/version_one 1/version_one/images/id_numbers.coe} CONFIG.Port_A_Write_Rate {0}] [get_ips blk_mem_gen_5]
+generate_target {instantiation_template} [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_5/blk_mem_gen_5.xci}}]
+generate_target all [get_files  {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_5/blk_mem_gen_5.xci}}]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_5] }
+export_ip_user_files -of_objects [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_5/blk_mem_gen_5.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_5/blk_mem_gen_5.xci}}]
+launch_runs -jobs 6 blk_mem_gen_5_synth_1
+export_simulation -of_objects [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_5/blk_mem_gen_5.xci}}] -directory {H:/version_one 1/version_one/version_one.ip_user_files/sim_scripts} -ip_user_files_dir {H:/version_one 1/version_one/version_one.ip_user_files} -ipstatic_source_dir {H:/version_one 1/version_one/version_one.ip_user_files/ipstatic} -lib_map_path [list {modelsim=H:/version_one 1/version_one/version_one.cache/compile_simlib/modelsim} {questa=H:/version_one 1/version_one/version_one.cache/compile_simlib/questa} {riviera=H:/version_one 1/version_one/version_one.cache/compile_simlib/riviera} {activehdl=H:/version_one 1/version_one/version_one.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property -dict [list CONFIG.Write_Depth_A {50000} CONFIG.Coe_File {H:/version_one 1/version_one/images/game_icon.coe}] [get_ips blk_mem_gen_4]
+generate_target all [get_files  {{H:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_4_1/blk_mem_gen_4.xci}}]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_4] }
+export_ip_user_files -of_objects [get_files {{H:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_4_1/blk_mem_gen_4.xci}}] -no_script -sync -force -quiet
+reset_run blk_mem_gen_4_synth_1
+launch_runs -jobs 6 blk_mem_gen_4_synth_1
+export_simulation -of_objects [get_files {{H:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_4_1/blk_mem_gen_4.xci}}] -directory {H:/version_one 1/version_one/version_one.ip_user_files/sim_scripts} -ip_user_files_dir {H:/version_one 1/version_one/version_one.ip_user_files} -ipstatic_source_dir {H:/version_one 1/version_one/version_one.ip_user_files/ipstatic} -lib_map_path [list {modelsim=H:/version_one 1/version_one/version_one.cache/compile_simlib/modelsim} {questa=H:/version_one 1/version_one/version_one.cache/compile_simlib/questa} {riviera=H:/version_one 1/version_one/version_one.cache/compile_simlib/riviera} {activehdl=H:/version_one 1/version_one/version_one.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_6 -dir {h:/version_one 1/version_one/version_one.srcs/sources_1/ip}
+set_property -dict [list CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Write_Width_A {12} CONFIG.Write_Depth_A {10000} CONFIG.Read_Width_A {12} CONFIG.Write_Width_B {12} CONFIG.Read_Width_B {12} CONFIG.Port_A_Write_Rate {0}] [get_ips blk_mem_gen_6]
+generate_target {instantiation_template} [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_6/blk_mem_gen_6.xci}}]
+update_compile_order -fileset sources_1
+generate_target all [get_files  {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_6/blk_mem_gen_6.xci}}]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_6] }
+export_ip_user_files -of_objects [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_6/blk_mem_gen_6.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_6/blk_mem_gen_6.xci}}]
+launch_runs -jobs 6 blk_mem_gen_6_synth_1
+export_simulation -of_objects [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_6/blk_mem_gen_6.xci}}] -directory {H:/version_one 1/version_one/version_one.ip_user_files/sim_scripts} -ip_user_files_dir {H:/version_one 1/version_one/version_one.ip_user_files} -ipstatic_source_dir {H:/version_one 1/version_one/version_one.ip_user_files/ipstatic} -lib_map_path [list {modelsim=H:/version_one 1/version_one/version_one.cache/compile_simlib/modelsim} {questa=H:/version_one 1/version_one/version_one.cache/compile_simlib/questa} {riviera=H:/version_one 1/version_one/version_one.cache/compile_simlib/riviera} {activehdl=H:/version_one 1/version_one/version_one.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_ip_user_files -of_objects  [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_6/blk_mem_gen_6.xci}}] -no_script -reset -force -quiet
+remove_files  -fileset blk_mem_gen_6 {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_6/blk_mem_gen_6.xci}}
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_6 -dir {h:/version_one 1/version_one/version_one.srcs/sources_1/ip}
+set_property -dict [list CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Write_Width_A {12} CONFIG.Write_Depth_A {10000} CONFIG.Read_Width_A {12} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {12} CONFIG.Read_Width_B {12} CONFIG.Load_Init_File {true} CONFIG.Coe_File {H:/version_one 1/version_one/images/sparkle_one.coe} CONFIG.Port_A_Write_Rate {0}] [get_ips blk_mem_gen_6]
+generate_target {instantiation_template} [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_6_1/blk_mem_gen_6.xci}}]
+generate_target all [get_files  {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_6_1/blk_mem_gen_6.xci}}]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_6] }
+export_ip_user_files -of_objects [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_6_1/blk_mem_gen_6.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_6_1/blk_mem_gen_6.xci}}]
+launch_runs -jobs 6 blk_mem_gen_6_synth_1
+export_simulation -of_objects [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_6_1/blk_mem_gen_6.xci}}] -directory {H:/version_one 1/version_one/version_one.ip_user_files/sim_scripts} -ip_user_files_dir {H:/version_one 1/version_one/version_one.ip_user_files} -ipstatic_source_dir {H:/version_one 1/version_one/version_one.ip_user_files/ipstatic} -lib_map_path [list {modelsim=H:/version_one 1/version_one/version_one.cache/compile_simlib/modelsim} {questa=H:/version_one 1/version_one/version_one.cache/compile_simlib/questa} {riviera=H:/version_one 1/version_one/version_one.cache/compile_simlib/riviera} {activehdl=H:/version_one 1/version_one/version_one.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_7 -dir {h:/version_one 1/version_one/version_one.srcs/sources_1/ip}
+set_property -dict [list CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Write_Width_A {12} CONFIG.Write_Depth_A {10000} CONFIG.Read_Width_A {12} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {12} CONFIG.Read_Width_B {12} CONFIG.Load_Init_File {true} CONFIG.Coe_File {H:/version_one 1/version_one/images/sparkle_two.coe} CONFIG.Port_A_Write_Rate {0}] [get_ips blk_mem_gen_7]
+generate_target {instantiation_template} [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_7/blk_mem_gen_7.xci}}]
+update_compile_order -fileset sources_1
+generate_target all [get_files  {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_7/blk_mem_gen_7.xci}}]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_7] }
+export_ip_user_files -of_objects [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_7/blk_mem_gen_7.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_7/blk_mem_gen_7.xci}}]
+launch_runs -jobs 6 blk_mem_gen_7_synth_1
+export_simulation -of_objects [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_7/blk_mem_gen_7.xci}}] -directory {H:/version_one 1/version_one/version_one.ip_user_files/sim_scripts} -ip_user_files_dir {H:/version_one 1/version_one/version_one.ip_user_files} -ipstatic_source_dir {H:/version_one 1/version_one/version_one.ip_user_files/ipstatic} -lib_map_path [list {modelsim=H:/version_one 1/version_one/version_one.cache/compile_simlib/modelsim} {questa=H:/version_one 1/version_one/version_one.cache/compile_simlib/questa} {riviera=H:/version_one 1/version_one/version_one.cache/compile_simlib/riviera} {activehdl=H:/version_one 1/version_one/version_one.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+close [ open {H:/version_one 1/version_one/version_one.srcs/sources_1/new/draw_sparkle.v} w ]
+add_files {{H:/version_one 1/version_one/version_one.srcs/sources_1/new/draw_sparkle.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property -dict [list CONFIG.Coe_File {H:/version_one 1/version_one/images/blue_heart.coe}] [get_ips blk_mem_gen_0]
+generate_target all [get_files  {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_0_2/blk_mem_gen_0.xci}}]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_0] }
+export_ip_user_files -of_objects [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_0_2/blk_mem_gen_0.xci}}] -no_script -sync -force -quiet
+reset_run blk_mem_gen_0_synth_1
+launch_runs -jobs 6 blk_mem_gen_0_synth_1
+export_simulation -of_objects [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_0_2/blk_mem_gen_0.xci}}] -directory {H:/version_one 1/version_one/version_one.ip_user_files/sim_scripts} -ip_user_files_dir {H:/version_one 1/version_one/version_one.ip_user_files} -ipstatic_source_dir {H:/version_one 1/version_one/version_one.ip_user_files/ipstatic} -lib_map_path [list {modelsim=H:/version_one 1/version_one/version_one.cache/compile_simlib/modelsim} {questa=H:/version_one 1/version_one/version_one.cache/compile_simlib/questa} {riviera=H:/version_one 1/version_one/version_one.cache/compile_simlib/riviera} {activehdl=H:/version_one 1/version_one/version_one.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Coe_File {H:/version_one 1/version_one/images/blue_cloud.coe}] [get_ips blk_mem_gen_2]
+generate_target all [get_files  {{H:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci}}]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_2] }
+export_ip_user_files -of_objects [get_files {{H:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci}}] -no_script -sync -force -quiet
+reset_run blk_mem_gen_2_synth_1
+launch_runs -jobs 6 blk_mem_gen_2_synth_1
+export_simulation -of_objects [get_files {{H:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci}}] -directory {H:/version_one 1/version_one/version_one.ip_user_files/sim_scripts} -ip_user_files_dir {H:/version_one 1/version_one/version_one.ip_user_files} -ipstatic_source_dir {H:/version_one 1/version_one/version_one.ip_user_files/ipstatic} -lib_map_path [list {modelsim=H:/version_one 1/version_one/version_one.cache/compile_simlib/modelsim} {questa=H:/version_one 1/version_one/version_one.cache/compile_simlib/questa} {riviera=H:/version_one 1/version_one/version_one.cache/compile_simlib/riviera} {activehdl=H:/version_one 1/version_one/version_one.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Coe_File {H:/version_one 1/version_one/images/cloud_game_name.coe}] [get_ips blk_mem_gen_4]
+generate_target all [get_files  {{H:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_4_1/blk_mem_gen_4.xci}}]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_4] }
+export_ip_user_files -of_objects [get_files {{H:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_4_1/blk_mem_gen_4.xci}}] -no_script -sync -force -quiet
+reset_run blk_mem_gen_4_synth_1
+launch_runs -jobs 6 blk_mem_gen_4_synth_1
+export_simulation -of_objects [get_files {{H:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_4_1/blk_mem_gen_4.xci}}] -directory {H:/version_one 1/version_one/version_one.ip_user_files/sim_scripts} -ip_user_files_dir {H:/version_one 1/version_one/version_one.ip_user_files} -ipstatic_source_dir {H:/version_one 1/version_one/version_one.ip_user_files/ipstatic} -lib_map_path [list {modelsim=H:/version_one 1/version_one/version_one.cache/compile_simlib/modelsim} {questa=H:/version_one 1/version_one/version_one.cache/compile_simlib/questa} {riviera=H:/version_one 1/version_one/version_one.cache/compile_simlib/riviera} {activehdl=H:/version_one 1/version_one/version_one.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Write_Depth_A {30000} CONFIG.Coe_File {H:/version_one 1/version_one/images/id_cloud.coe}] [get_ips blk_mem_gen_5]
+generate_target all [get_files  {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_5/blk_mem_gen_5.xci}}]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_5] }
+export_ip_user_files -of_objects [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_5/blk_mem_gen_5.xci}}] -no_script -sync -force -quiet
+reset_run blk_mem_gen_5_synth_1
+launch_runs -jobs 6 blk_mem_gen_5_synth_1
+export_simulation -of_objects [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_5/blk_mem_gen_5.xci}}] -directory {H:/version_one 1/version_one/version_one.ip_user_files/sim_scripts} -ip_user_files_dir {H:/version_one 1/version_one/version_one.ip_user_files} -ipstatic_source_dir {H:/version_one 1/version_one/version_one.ip_user_files/ipstatic} -lib_map_path [list {modelsim=H:/version_one 1/version_one/version_one.cache/compile_simlib/modelsim} {questa=H:/version_one 1/version_one/version_one.cache/compile_simlib/questa} {riviera=H:/version_one 1/version_one/version_one.cache/compile_simlib/riviera} {activehdl=H:/version_one 1/version_one/version_one.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Coe_File {H:/version_one 1/version_one/images/blue_orb.coe}] [get_ips blk_mem_gen_1]
+generate_target all [get_files  {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_1_4/blk_mem_gen_1.xci}}]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_1] }
+export_ip_user_files -of_objects [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_1_4/blk_mem_gen_1.xci}}] -no_script -sync -force -quiet
+reset_run blk_mem_gen_1_synth_1
+launch_runs -jobs 6 blk_mem_gen_1_synth_1
+export_simulation -of_objects [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_1_4/blk_mem_gen_1.xci}}] -directory {H:/version_one 1/version_one/version_one.ip_user_files/sim_scripts} -ip_user_files_dir {H:/version_one 1/version_one/version_one.ip_user_files} -ipstatic_source_dir {H:/version_one 1/version_one/version_one.ip_user_files/ipstatic} -lib_map_path [list {modelsim=H:/version_one 1/version_one/version_one.cache/compile_simlib/modelsim} {questa=H:/version_one 1/version_one/version_one.cache/compile_simlib/questa} {riviera=H:/version_one 1/version_one/version_one.cache/compile_simlib/riviera} {activehdl=H:/version_one 1/version_one/version_one.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property -dict [list CONFIG.Coe_File {H:/version_one 1/version_one/images/cat_image_one.coe}] [get_ips blk_mem_gen_6]
+generate_target all [get_files  {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_6_1/blk_mem_gen_6.xci}}]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_6] }
+export_ip_user_files -of_objects [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_6_1/blk_mem_gen_6.xci}}] -no_script -sync -force -quiet
+reset_run blk_mem_gen_6_synth_1
+launch_runs -jobs 6 blk_mem_gen_6_synth_1
+export_simulation -of_objects [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_6_1/blk_mem_gen_6.xci}}] -directory {H:/version_one 1/version_one/version_one.ip_user_files/sim_scripts} -ip_user_files_dir {H:/version_one 1/version_one/version_one.ip_user_files} -ipstatic_source_dir {H:/version_one 1/version_one/version_one.ip_user_files/ipstatic} -lib_map_path [list {modelsim=H:/version_one 1/version_one/version_one.cache/compile_simlib/modelsim} {questa=H:/version_one 1/version_one/version_one.cache/compile_simlib/questa} {riviera=H:/version_one 1/version_one/version_one.cache/compile_simlib/riviera} {activehdl=H:/version_one 1/version_one/version_one.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Coe_File {H:/version_one 1/version_one/images/cat_image_two.coe}] [get_ips blk_mem_gen_7]
+generate_target all [get_files  {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_7/blk_mem_gen_7.xci}}]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_7] }
+export_ip_user_files -of_objects [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_7/blk_mem_gen_7.xci}}] -no_script -sync -force -quiet
+reset_run blk_mem_gen_7_synth_1
+launch_runs -jobs 6 blk_mem_gen_7_synth_1
+export_simulation -of_objects [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_7/blk_mem_gen_7.xci}}] -directory {H:/version_one 1/version_one/version_one.ip_user_files/sim_scripts} -ip_user_files_dir {H:/version_one 1/version_one/version_one.ip_user_files} -ipstatic_source_dir {H:/version_one 1/version_one/version_one.ip_user_files/ipstatic} -lib_map_path [list {modelsim=H:/version_one 1/version_one/version_one.cache/compile_simlib/modelsim} {questa=H:/version_one 1/version_one/version_one.cache/compile_simlib/questa} {riviera=H:/version_one 1/version_one/version_one.cache/compile_simlib/riviera} {activehdl=H:/version_one 1/version_one/version_one.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property -dict [list CONFIG.Coe_File {H:/version_one 1/version_one/images/cat_dance_one.coe}] [get_ips blk_mem_gen_6]
+generate_target all [get_files  {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_6_1/blk_mem_gen_6.xci}}]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_6] }
+export_ip_user_files -of_objects [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_6_1/blk_mem_gen_6.xci}}] -no_script -sync -force -quiet
+reset_run blk_mem_gen_6_synth_1
+launch_runs -jobs 6 blk_mem_gen_6_synth_1
+export_simulation -of_objects [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_6_1/blk_mem_gen_6.xci}}] -directory {H:/version_one 1/version_one/version_one.ip_user_files/sim_scripts} -ip_user_files_dir {H:/version_one 1/version_one/version_one.ip_user_files} -ipstatic_source_dir {H:/version_one 1/version_one/version_one.ip_user_files/ipstatic} -lib_map_path [list {modelsim=H:/version_one 1/version_one/version_one.cache/compile_simlib/modelsim} {questa=H:/version_one 1/version_one/version_one.cache/compile_simlib/questa} {riviera=H:/version_one 1/version_one/version_one.cache/compile_simlib/riviera} {activehdl=H:/version_one 1/version_one/version_one.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Coe_File {H:/version_one 1/version_one/images/cat_dance_two.coe}] [get_ips blk_mem_gen_7]
+generate_target all [get_files  {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_7/blk_mem_gen_7.xci}}]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_7] }
+export_ip_user_files -of_objects [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_7/blk_mem_gen_7.xci}}] -no_script -sync -force -quiet
+reset_run blk_mem_gen_7_synth_1
+launch_runs -jobs 6 blk_mem_gen_7_synth_1
+export_simulation -of_objects [get_files {{h:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_7/blk_mem_gen_7.xci}}] -directory {H:/version_one 1/version_one/version_one.ip_user_files/sim_scripts} -ip_user_files_dir {H:/version_one 1/version_one/version_one.ip_user_files} -ipstatic_source_dir {H:/version_one 1/version_one/version_one.ip_user_files/ipstatic} -lib_map_path [list {modelsim=H:/version_one 1/version_one/version_one.cache/compile_simlib/modelsim} {questa=H:/version_one 1/version_one/version_one.cache/compile_simlib/questa} {riviera=H:/version_one 1/version_one/version_one.cache/compile_simlib/riviera} {activehdl=H:/version_one 1/version_one/version_one.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property -dict [list CONFIG.Coe_File {H:/version_one 1/version_one/images/cloud_paddle.coe}] [get_ips blk_mem_gen_3]
+generate_target all [get_files  {{H:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3.xci}}]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_3] }
+export_ip_user_files -of_objects [get_files {{H:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3.xci}}] -no_script -sync -force -quiet
+reset_run blk_mem_gen_3_synth_1
+launch_runs -jobs 6 blk_mem_gen_3_synth_1
+export_simulation -of_objects [get_files {{H:/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3.xci}}] -directory {H:/version_one 1/version_one/version_one.ip_user_files/sim_scripts} -ip_user_files_dir {H:/version_one 1/version_one/version_one.ip_user_files} -ipstatic_source_dir {H:/version_one 1/version_one/version_one.ip_user_files/ipstatic} -lib_map_path [list {modelsim=H:/version_one 1/version_one/version_one.cache/compile_simlib/modelsim} {questa=H:/version_one 1/version_one/version_one.cache/compile_simlib/questa} {riviera=H:/version_one 1/version_one/version_one.cache/compile_simlib/riviera} {activehdl=H:/version_one 1/version_one/version_one.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run blk_mem_gen_3_synth_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {H:/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]

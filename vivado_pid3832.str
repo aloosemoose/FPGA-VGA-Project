@@ -1,0 +1,813 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 3832
+License: Customer
+
+Current time: 	Fri Apr 12 12:05:16 BST 2024
+Time zone: 	Greenwich Mean Time (Europe/London)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 2
+Available disk space: 115 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	u2063368
+User home directory: C:/Users/u2063368
+User working directory: H:/version_one 1/version_one
+User country: 	GB
+User language: 	en
+User locale: 	en_GB
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2019.1
+RDI_DATADIR: C:/Xilinx/Vivado/2019.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2019.1/bin
+
+Vivado preferences file location: C:/Users/u2063368/AppData/Roaming/Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: C:/Users/u2063368/AppData/Roaming/Xilinx/Vivado/2019.1/
+Vivado layouts directory: C:/Users/u2063368/AppData/Roaming/Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	H:/version_one 1/version_one/vivado.log
+Vivado journal file location: 	H:/version_one 1/version_one/vivado.jou
+Engine tmp dir: 	H:/version_one 1/version_one/.Xil/Vivado-3832-F211-16
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINXD_LICENSE_FILE: 27006@XilinxLicense.soe.warwick.ac.uk
+XILINX_DSP: C:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2019.1
+XILINX_SDK: C:/Xilinx/SDK/2019.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2019.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2019.1
+
+
+GUI allocated memory:	384 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 684 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// by (cl):  Open Project : addNotify
+// Opening Vivado Project: H:\version_one 1\version_one\version_one.xpr. Version: Vivado v2019.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {H:/version_one 1/version_one/version_one.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 694 MB. GUI used memory: 50 MB. Current time: 4/12/24, 12:05:18 PM BST
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 69 MB (+69555kb) [00:00:17]
+// [Engine Memory]: 782 MB (+668985kb) [00:00:17]
+// [GUI Memory]: 85 MB (+13670kb) [00:00:17]
+// [GUI Memory]: 110 MB (+21721kb) [00:00:17]
+// WARNING: HEventQueue.dispatchEvent() is taking  2384 ms.
+// Tcl Message: open_project {H:/version_one 1/version_one/version_one.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'. 
+// [Engine Memory]: 856 MB (+35775kb) [00:00:18]
+// Project name: version_one; location: H:/version_one 1/version_one; part: xc7a100tcsg324-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 956.508 ; gain = 82.496 
+dismissDialog("Open Project"); // by (cl)
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cl): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// by (cl):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cl)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// 'cx' command handler elapsed time: 3 seconds
+dismissDialog("Resetting Runs"); // by (cl)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'H:/version_one 1/version_one/version_one.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date 
+// by (cl):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Apr 12 12:05:47 2024] Launched synth_1... Run output will be captured here: H:/version_one 1/version_one/version_one.runs/synth_1/runme.log [Fri Apr 12 12:05:47 2024] Launched impl_1... Run output will be captured here: H:/version_one 1/version_one/version_one.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // by (cl)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ah (cl): Bitstream Generation Completed: addNotify
+// Elapsed time: 258 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// by (cl):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// [GUI Memory]: 119 MB (+3223kb) [00:05:01]
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // by (cl)
+// [GUI Memory]: 127 MB (+2205kb) [00:05:11]
+// Elapsed time: 10 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cS, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// by (cl):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2019.1   **** Build date : May 24 2019 at 15:13:31     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  3453 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292ABF189A 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,971 MB. GUI used memory: 58 MB. Current time: 4/12/24, 12:10:26 PM BST
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {H:/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0). 
+// [Engine Memory]: 1,973 MB (+1126176kb) [00:05:21]
+dismissDialog("Auto Connect"); // by (cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cl)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {H:/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // by (cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cl)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {H:/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // by (cl)
+// Elapsed time: 62 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cl)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// A (cl): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// by (cl):  Close Hardware Manager : addNotify
+dismissDialog("Confirm Close"); // A (cl)
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw 
+dismissDialog("Close Hardware Manager"); // by (cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v)]", 1); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), ball_inst : ball_xy_movement (ball_xy_movement.v)]", 4); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), ball_inst : ball_xy_movement (ball_xy_movement.v), gen_detect_brick_collisions[0].brick_collision_i : detect_brick_collision (detect_brick_collision.v)]", 5, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, game_top (game_top.v), ball_inst : ball_xy_movement (ball_xy_movement.v), gen_detect_brick_collisions[0].brick_collision_i : detect_brick_collision (detect_brick_collision.v)]", 5, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectCodeEditor("detect_brick_collision.v", 146, 250); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 118, 231); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 53, 59); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 71, 93); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 78, 242); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 79, 261); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 70, 216); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 74, 237); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 525, 176); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 532, 213); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 425, 193); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 622, 282); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 424, 298); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 533, 314); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 522, 383); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 424, 400); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 523, 415); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 518, 469); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 630, 487); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 423, 376); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 361, 380); // cl (w, cl)
+// Elapsed time: 19 seconds
+selectCodeEditor("detect_brick_collision.v", 449, 380); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 545, 379); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 494, 418); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 494, 418, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "detect_brick_collision.v", 'c'); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 545, 377); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 488, 351); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 544, 379); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 568, 385); // cl (w, cl)
+typeControlKey((HResource) null, "detect_brick_collision.v", 'c'); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 622, 376); // cl (w, cl)
+typeControlKey((HResource) null, "detect_brick_collision.v", 'v'); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 501, 415); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 501, 415, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "detect_brick_collision.v", 'c'); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 514, 381); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 514, 381, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "detect_brick_collision.v", 'v'); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 519, 401); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 481, 344); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 556, 393); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 521, 363); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 479, 360); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 396, 378); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 396, 378, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("detect_brick_collision.v", 480, 366); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 469, 393); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 465, 371); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 456, 403); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 524, 417); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 425, 395); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 451, 403); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 470, 417); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 452, 399); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 477, 414); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 468, 401); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 452, 239); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 429, 196); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 386, 242); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 356, 264); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 364, 302); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 497, 318); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cl): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// by (cl):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cl)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // by (cl)
+// TclEventType: RUN_LAUNCH
+// by (cl):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 6 
+// Tcl Message: INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'H:/version_one 1/version_one/version_one.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is already up-to-date 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Apr 12 12:14:00 2024] Launched synth_1... Run output will be captured here: H:/version_one 1/version_one/version_one.runs/synth_1/runme.log [Fri Apr 12 12:14:00 2024] Launched impl_1... Run output will be captured here: H:/version_one 1/version_one/version_one.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+dismissDialog("Generate Bitstream"); // by (cl)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 58 seconds
+selectCodeEditor("detect_brick_collision.v", 416, 262); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 506, 264); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 505, 291); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 444, 266); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 491, 287); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 290, 340); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 278, 330); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 240, 352); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 222, 213); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 113, 205); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 221, 197); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 256, 219); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 770, 427); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 938, 432); // cl (w, cl)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ah (cl): Bitstream Generation Completed: addNotify
+// Elapsed time: 92 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// by (cl):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Open Hardware Manager"); // by (cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// by (cl):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2019.1   **** Build date : May 24 2019 at 15:13:31     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292ABF189A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {H:/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // by (cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cl)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {H:/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // by (cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a100t_0"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cl)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {H:/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // by (cl)
+// Elapsed time: 40 seconds
+selectCodeEditor("detect_brick_collision.v", 211, 173); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 276, 191); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 286, 212); // cl (w, cl)
+// Elapsed time: 34 seconds
+selectCodeEditor("detect_brick_collision.v", 357, 298); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 454, 350); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 501, 414); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 529, 457); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 507, 417); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 502, 434); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 501, 434); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 496, 434); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 495, 434, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("detect_brick_collision.v", 246, 82); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 215, 64); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 572, 287); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 263, 467); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 447, 281); // cl (w, cl)
+// Elapsed time: 55 seconds
+selectCodeEditor("detect_brick_collision.v", 90, 134); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 137, 222); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 250, 239); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 278, 212); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 335, 145); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 353, 182); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 332, 139); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 360, 180); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 336, 140); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 344, 164); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 384, 161); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 384, 161, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("detect_brick_collision.v", 413, 197); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 413, 197, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("detect_brick_collision.v", 127, 77); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 127, 77, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "detect_brick_collision.v", 'c'); // cl (w, cl)
+typeControlKey((HResource) null, "detect_brick_collision.v", 'c'); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 394, 262); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 394, 262, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "detect_brick_collision.v", 'v'); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 435, 239); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 495, 251); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 504, 273); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 371, 276); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 380, 196); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 473, 203); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 430, 216); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 434, 212); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 388, 180); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 477, 187); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 453, 159); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 432, 159); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 501, 465); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 214, 91); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 448, 194); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 432, 161); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 503, 472); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 503, 472, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "detect_brick_collision.v", 'c'); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 433, 158); // cl (w, cl)
+typeControlKey((HResource) null, "detect_brick_collision.v", 'v'); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 516, 143); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 523, 181); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 435, 134); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 446, 166); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 405, 184); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 533, 200); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 417, 227); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 412, 179); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 343, 210); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 344, 178); // cl (w, cl)
+// Elapsed time: 32 seconds
+selectCodeEditor("detect_brick_collision.v", 225, 141); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 217, 147); // cl (w, cl)
+typeControlKey((HResource) null, "detect_brick_collision.v", 'c'); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 221, 160); // cl (w, cl)
+typeControlKey((HResource) null, "detect_brick_collision.v", 'v'); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 297, 151); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 279, 135); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 291, 179); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 160, 158); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 160, 158, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "detect_brick_collision.v", 'c'); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 364, 246); // cl (w, cl)
+typeControlKey((HResource) null, "detect_brick_collision.v", 'v'); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 456, 211); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 474, 252); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 481, 270); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 328, 286); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 380, 248); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 380, 248, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "detect_brick_collision.v", 'c'); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 447, 265); // cl (w, cl)
+typeControlKey((HResource) null, "detect_brick_collision.v", 'v'); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 528, 283); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 523, 251); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 550, 286); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 574, 246); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 613, 258); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 601, 239); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 421, 132); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 430, 148); // cl (w, cl)
+// Elapsed time: 49 seconds
+selectCodeEditor("detect_brick_collision.v", 434, 146); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 782, 162); // cl (w, cl)
+// Elapsed time: 26 seconds
+selectCodeEditor("detect_brick_collision.v", 480, 142); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 563, 188); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 527, 151); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 557, 180); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 712, 209); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 707, 194); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 723, 178); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 429, 142); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 409, 128); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 461, 150); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 249, 177); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 437, 135); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 789, 173); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 766, 207); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 328, 186); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 379, 146); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 616, 292); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 613, 277); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 342, 111); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 327, 117); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 304, 125); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 421, 144); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 391, 139); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 756, 160); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 257, 113); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 361, 197); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 452, 136); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 330, 125); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 458, 144); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 353, 173); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 527, 223); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 345, 256); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 335, 117); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 481, 137); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 390, 163); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 390, 163, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("detect_brick_collision.v", 317, 130); // cl (w, cl)
+// Elapsed time: 19 seconds
+selectCodeEditor("detect_brick_collision.v", 514, 167); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 514, 167, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("detect_brick_collision.v", 457, 145); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 539, 157); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 499, 62); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 539, 164); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 529, 212); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 437, 179); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 342, 181); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 435, 75); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 435, 75, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "detect_brick_collision.v", 'c'); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 365, 178); // cl (w, cl)
+typeControlKey((HResource) null, "detect_brick_collision.v", 'v'); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 449, 201); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 494, 196); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 512, 170); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 447, 196); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 464, 95); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 475, 75); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 462, 94); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 419, 286); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 425, 177); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 370, 181); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 338, 250); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 350, 278); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 342, 246); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 468, 259); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 353, 241); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 742, 79); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 488, 51); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 601, 140); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 417, 197); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 615, 212); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 408, 229); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 408, 249); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 531, 147); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 531, 147, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "detect_brick_collision.v", 'c'); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 448, 250); // cl (w, cl)
+typeControlKey((HResource) null, "detect_brick_collision.v", 'v'); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 310, 278); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 525, 143); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 525, 143, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "detect_brick_collision.v", 'c'); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 340, 381); // cl (w, cl)
+typeControlKey((HResource) null, "detect_brick_collision.v", 'v'); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 441, 401); // cl (w, cl)
+typeControlKey((HResource) null, "detect_brick_collision.v", 'v'); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 429, 422); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 477, 385); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 436, 419); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 286, 331); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 343, 295); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 361, 328); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 480, 110); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 480, 110, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "detect_brick_collision.v", 'c'); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 463, 317); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 354, 293); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 461, 317); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 339, 292); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 319, 276); // cl (w, cl)
+// Elapsed time: 12 seconds
+selectCodeEditor("detect_brick_collision.v", 344, 336); // cl (w, cl)
+typeControlKey((HResource) null, "detect_brick_collision.v", 'v'); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 439, 353); // cl (w, cl)
+typeControlKey((HResource) null, "detect_brick_collision.v", 'v'); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 504, 447); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 504, 447, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "detect_brick_collision.v", 'c'); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 494, 350); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 494, 350, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "detect_brick_collision.v", 'v'); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 400, 331); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 400, 331, false, false, false, false, true); // cl (w, cl) - Double Click
+typeControlKey((HResource) null, "detect_brick_collision.v", 'v'); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 486, 333); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 483, 321); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 458, 300); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("detect_brick_collision.v", 396, 319); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 379, 366); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 310, 315); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 310, 315, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("detect_brick_collision.v", 390, 316); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 390, 316, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("detect_brick_collision.v", 368, 299); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 312, 309); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 312, 309, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("detect_brick_collision.v", 361, 298); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 363, 279); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 172, 401); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 259, 416); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 254, 403); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 257, 419); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 108, 398); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 82, 416); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 91, 417); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 135, 415); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 278, 416); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 79, 126); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 316, 402); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 307, 418); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 533, 433); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 473, 415); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 525, 439); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 144, 328); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 25, 233); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 27, 336); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 35, 436); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 27, 329); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 988, 364); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 760, 139); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 749, 126); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 490, 86); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 776, 131); // cl (w, cl)
+// Elapsed time: 17 seconds
+selectCodeEditor("detect_brick_collision.v", 804, 184); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 767, 127); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 576, 72); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 47, 320); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 168, 383); // cl (w, cl)
+// Elapsed time: 20 seconds
+selectCodeEditor("detect_brick_collision.v", 271, 347); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 246, 367); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 429, 414); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 408, 450); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 125, 231); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 194, 179); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 28, 229); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 242, 192); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 61, 172); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 112, 149); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 413, 161); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 318, 141); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 404, 159); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 327, 147); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 701, 250); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 700, 306); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 679, 297); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 317, 197); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 374, 283); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 260, 194); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 329, 283); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 523, 296); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 212, 107); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 217, 111); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 557, 197); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 565, 197); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 515, 194); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 515, 194, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("detect_brick_collision.v", 574, 197); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 567, 192); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 633, 143); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 815, 198); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 798, 175); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 823, 197); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 746, 247); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 732, 270); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 723, 283); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 379, 292); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 112, 345); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 54, 422); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 32, 450); // cl (w, cl)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,013 MB. GUI used memory: 95 MB. Current time: 4/12/24, 12:29:13 PM BST
+selectCodeEditor("detect_brick_collision.v", 374, 154); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 388, 86); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 389, 308); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 395, 329); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 416, 200); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 419, 215); // cl (w, cl)
+// Elapsed time: 14 seconds
+selectCodeEditor("detect_brick_collision.v", 436, 227); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 439, 226, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("detect_brick_collision.v", 465, 228); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 442, 213); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 482, 238); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 508, 231); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 514, 246); // cl (w, cl)
+selectCodeEditor("detect_brick_collision.v", 408, 206); // cl (w, cl)

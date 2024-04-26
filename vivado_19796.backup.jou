@@ -1,0 +1,447 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Apr 17 19:12:01 2024
+# Process ID: 19796
+# Current directory: C:/Users/aloos/final_current/version_one 1/version_one
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24300 C:\Users\aloos\final_current\version_one 1\version_one\version_one.xpr
+# Log file: C:/Users/aloos/final_current/version_one 1/version_one/vivado.log
+# Journal file: C:/Users/aloos/final_current/version_one 1/version_one\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/aloos/final_current/version_one 1/version_one/version_one.xpr}
+update_compile_order -fileset sources_1
+close [ open {C:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/new/draw_rain.v} w ]
+add_files {{C:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/new/draw_rain.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/aloos/final_current/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/aloos/final_current/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/aloos/final_current/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/aloos/final_current/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/aloos/final_current/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/aloos/final_current/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/aloos/final_current/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/aloos/final_current/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/aloos/final_current/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/aloos/final_current/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/aloos/final_current/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/aloos/final_current/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/aloos/final_current/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/aloos/final_current/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/aloos/final_current/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/aloos/final_current/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property -dict [list CONFIG.Coe_File {C:/Users/aloos/final_current/version_one 1/version_one/images/game_title.coe}] [get_ips blk_mem_gen_4]
+generate_target all [get_files  {{C:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_4_1/blk_mem_gen_4.xci}}]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_4] }
+export_ip_user_files -of_objects [get_files {{C:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_4_1/blk_mem_gen_4.xci}}] -no_script -sync -force -quiet
+reset_run blk_mem_gen_4_synth_1
+launch_runs -jobs 8 blk_mem_gen_4_synth_1
+export_simulation -of_objects [get_files {{C:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_4_1/blk_mem_gen_4.xci}}] -directory {C:/Users/aloos/final_current/version_one 1/version_one/version_one.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/aloos/final_current/version_one 1/version_one/version_one.ip_user_files} -ipstatic_source_dir {C:/Users/aloos/final_current/version_one 1/version_one/version_one.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/aloos/final_current/version_one 1/version_one/version_one.cache/compile_simlib/modelsim} {questa=C:/Users/aloos/final_current/version_one 1/version_one/version_one.cache/compile_simlib/questa} {riviera=C:/Users/aloos/final_current/version_one 1/version_one/version_one.cache/compile_simlib/riviera} {activehdl=C:/Users/aloos/final_current/version_one 1/version_one/version_one.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+close [ open {C:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/new/draw_game_over.v} w ]
+add_files {{C:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/new/draw_game_over.v}}
+update_compile_order -fileset sources_1
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_8 -dir {c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip}
+set_property -dict [list CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Write_Width_A {12} CONFIG.Write_Depth_A {28558} CONFIG.Read_Width_A {12} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {12} CONFIG.Read_Width_B {12} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/aloos/final_current/version_one 1/version_one/images/game_over.coe} CONFIG.Port_A_Write_Rate {0}] [get_ips blk_mem_gen_8]
+generate_target {instantiation_template} [get_files {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_8/blk_mem_gen_8.xci}}]
+update_compile_order -fileset sources_1
+generate_target all [get_files  {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_8/blk_mem_gen_8.xci}}]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_8] }
+export_ip_user_files -of_objects [get_files {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_8/blk_mem_gen_8.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_8/blk_mem_gen_8.xci}}]
+launch_runs -jobs 8 blk_mem_gen_8_synth_1
+export_simulation -of_objects [get_files {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_8/blk_mem_gen_8.xci}}] -directory {C:/Users/aloos/final_current/version_one 1/version_one/version_one.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/aloos/final_current/version_one 1/version_one/version_one.ip_user_files} -ipstatic_source_dir {C:/Users/aloos/final_current/version_one 1/version_one/version_one.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/aloos/final_current/version_one 1/version_one/version_one.cache/compile_simlib/modelsim} {questa=C:/Users/aloos/final_current/version_one 1/version_one/version_one.cache/compile_simlib/questa} {riviera=C:/Users/aloos/final_current/version_one 1/version_one/version_one.cache/compile_simlib/riviera} {activehdl=C:/Users/aloos/final_current/version_one 1/version_one/version_one.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/aloos/final_current/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/aloos/final_current/version_one 1/version_one/images/cat_dance_two.coe}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/aloos/final_current/version_one 1/version_one/images/cat_dance_two.coe}}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+create_ip -name dist_mem_gen -vendor xilinx.com -library ip -version 8.0 -module_name dist_mem_gen_0 -dir {c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip}
+set_property -dict [list CONFIG.depth {1376} CONFIG.data_width {12} CONFIG.memory_type {rom} CONFIG.coefficient_file {C:/Users/aloos/final_current/version_one 1/version_one/images/blue_orb.coe}] [get_ips dist_mem_gen_0]
+generate_target {instantiation_template} [get_files {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci}}]
+generate_target all [get_files  {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci}}]
+catch { config_ip_cache -export [get_ips -all dist_mem_gen_0] }
+export_ip_user_files -of_objects [get_files {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci}}]
+launch_runs -jobs 8 dist_mem_gen_0_synth_1
+export_simulation -of_objects [get_files {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci}}] -directory {C:/Users/aloos/final_current/version_one 1/version_one/version_one.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/aloos/final_current/version_one 1/version_one/version_one.ip_user_files} -ipstatic_source_dir {C:/Users/aloos/final_current/version_one 1/version_one/version_one.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/aloos/final_current/version_one 1/version_one/version_one.cache/compile_simlib/modelsim} {questa=C:/Users/aloos/final_current/version_one 1/version_one/version_one.cache/compile_simlib/questa} {riviera=C:/Users/aloos/final_current/version_one 1/version_one/version_one.cache/compile_simlib/riviera} {activehdl=C:/Users/aloos/final_current/version_one 1/version_one/version_one.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_ip_user_files -of_objects  [get_files {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci}}] -no_script -reset -force -quiet
+remove_files  -fileset dist_mem_gen_0 {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci}}
+create_ip -name dist_mem_gen -vendor xilinx.com -library ip -version 8.0 -module_name dist_mem_gen_0 -dir {c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip}
+set_property -dict [list CONFIG.depth {1376} CONFIG.data_width {12} CONFIG.memory_type {rom} CONFIG.coefficient_file {C:/Users/aloos/final_current/version_one 1/version_one/images/blue_orb.coe} CONFIG.default_data {000}] [get_ips dist_mem_gen_0]
+generate_target {instantiation_template} [get_files {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/dist_mem_gen_0_1/dist_mem_gen_0.xci}}]
+generate_target all [get_files  {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/dist_mem_gen_0_1/dist_mem_gen_0.xci}}]
+catch { config_ip_cache -export [get_ips -all dist_mem_gen_0] }
+export_ip_user_files -of_objects [get_files {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/dist_mem_gen_0_1/dist_mem_gen_0.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/dist_mem_gen_0_1/dist_mem_gen_0.xci}}]
+launch_runs -jobs 8 dist_mem_gen_0_synth_1
+export_simulation -of_objects [get_files {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/dist_mem_gen_0_1/dist_mem_gen_0.xci}}] -directory {C:/Users/aloos/final_current/version_one 1/version_one/version_one.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/aloos/final_current/version_one 1/version_one/version_one.ip_user_files} -ipstatic_source_dir {C:/Users/aloos/final_current/version_one 1/version_one/version_one.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/aloos/final_current/version_one 1/version_one/version_one.cache/compile_simlib/modelsim} {questa=C:/Users/aloos/final_current/version_one 1/version_one/version_one.cache/compile_simlib/questa} {riviera=C:/Users/aloos/final_current/version_one 1/version_one/version_one.cache/compile_simlib/riviera} {activehdl=C:/Users/aloos/final_current/version_one 1/version_one/version_one.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_ip_user_files -of_objects  [get_files {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/dist_mem_gen_0_1/dist_mem_gen_0.xci}}] -no_script -reset -force -quiet
+remove_files  -fileset dist_mem_gen_0 {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/dist_mem_gen_0_1/dist_mem_gen_0.xci}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_7/blk_mem_gen_7.xci}}] -no_script -reset -force -quiet
+remove_files  -fileset blk_mem_gen_7 {{C:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_7/blk_mem_gen_7.xci}}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+create_ip -name dist_mem_gen -vendor xilinx.com -library ip -version 8.0 -module_name dist_mem_gen_0 -dir {c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip}
+set_property -dict [list CONFIG.depth {1376} CONFIG.data_width {12} CONFIG.coefficient_file {C:/Users/aloos/final_current/version_one 1/version_one/images/blue_orb.coe} CONFIG.default_data {000}] [get_ips dist_mem_gen_0]
+generate_target {instantiation_template} [get_files {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/dist_mem_gen_0_2/dist_mem_gen_0.xci}}]
+generate_target all [get_files  {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/dist_mem_gen_0_2/dist_mem_gen_0.xci}}]
+catch { config_ip_cache -export [get_ips -all dist_mem_gen_0] }
+export_ip_user_files -of_objects [get_files {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/dist_mem_gen_0_2/dist_mem_gen_0.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/dist_mem_gen_0_2/dist_mem_gen_0.xci}}]
+launch_runs -jobs 8 dist_mem_gen_0_synth_1
+export_simulation -of_objects [get_files {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/dist_mem_gen_0_2/dist_mem_gen_0.xci}}] -directory {C:/Users/aloos/final_current/version_one 1/version_one/version_one.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/aloos/final_current/version_one 1/version_one/version_one.ip_user_files} -ipstatic_source_dir {C:/Users/aloos/final_current/version_one 1/version_one/version_one.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/aloos/final_current/version_one 1/version_one/version_one.cache/compile_simlib/modelsim} {questa=C:/Users/aloos/final_current/version_one 1/version_one/version_one.cache/compile_simlib/questa} {riviera=C:/Users/aloos/final_current/version_one 1/version_one/version_one.cache/compile_simlib/riviera} {activehdl=C:/Users/aloos/final_current/version_one 1/version_one/version_one.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run dist_mem_gen_0_synth_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property -dict [list CONFIG.memory_type {rom}] [get_ips dist_mem_gen_0]
+generate_target all [get_files  {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/dist_mem_gen_0_2/dist_mem_gen_0.xci}}]
+catch { config_ip_cache -export [get_ips -all dist_mem_gen_0] }
+catch { [ delete_ip_run [get_ips -all dist_mem_gen_0] ] }
+export_ip_user_files -of_objects [get_files {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/dist_mem_gen_0_2/dist_mem_gen_0.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/dist_mem_gen_0_2/dist_mem_gen_0.xci}}]
+export_simulation -of_objects [get_files {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/dist_mem_gen_0_2/dist_mem_gen_0.xci}}] -directory {C:/Users/aloos/final_current/version_one 1/version_one/version_one.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/aloos/final_current/version_one 1/version_one/version_one.ip_user_files} -ipstatic_source_dir {C:/Users/aloos/final_current/version_one 1/version_one/version_one.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/aloos/final_current/version_one 1/version_one/version_one.cache/compile_simlib/modelsim} {questa=C:/Users/aloos/final_current/version_one 1/version_one/version_one.cache/compile_simlib/questa} {riviera=C:/Users/aloos/final_current/version_one 1/version_one/version_one.cache/compile_simlib/riviera} {activehdl=C:/Users/aloos/final_current/version_one 1/version_one/version_one.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_1_4/blk_mem_gen_1.xci}}] -no_script -reset -force -quiet
+remove_files  -fileset blk_mem_gen_1 {{C:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_1_4/blk_mem_gen_1.xci}}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+create_ip -name dist_mem_gen -vendor xilinx.com -library ip -version 8.0 -module_name dist_mem_gen_1 -dir {c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip}
+set_property -dict [list CONFIG.depth {2000} CONFIG.data_width {12} CONFIG.memory_type {rom} CONFIG.coefficient_file {C:/Users/aloos/final_current/version_one 1/version_one/images/cloud_paddle.coe}] [get_ips dist_mem_gen_1]
+generate_target {instantiation_template} [get_files {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1.xci}}]
+generate_target all [get_files  {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1.xci}}]
+catch { config_ip_cache -export [get_ips -all dist_mem_gen_1] }
+export_ip_user_files -of_objects [get_files {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1.xci}}]
+launch_runs -jobs 8 dist_mem_gen_1_synth_1
+export_simulation -of_objects [get_files {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1.xci}}] -directory {C:/Users/aloos/final_current/version_one 1/version_one/version_one.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/aloos/final_current/version_one 1/version_one/version_one.ip_user_files} -ipstatic_source_dir {C:/Users/aloos/final_current/version_one 1/version_one/version_one.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/aloos/final_current/version_one 1/version_one/version_one.cache/compile_simlib/modelsim} {questa=C:/Users/aloos/final_current/version_one 1/version_one/version_one.cache/compile_simlib/questa} {riviera=C:/Users/aloos/final_current/version_one 1/version_one/version_one.cache/compile_simlib/riviera} {activehdl=C:/Users/aloos/final_current/version_one 1/version_one/version_one.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_ip_user_files -of_objects  [get_files {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1.xci}}] -no_script -reset -force -quiet
+remove_files  -fileset dist_mem_gen_1 {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1.xci}}
+create_ip -name dist_mem_gen -vendor xilinx.com -library ip -version 8.0 -module_name dist_mem_gen_1 -dir {c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip}
+set_property -dict [list CONFIG.depth {2000} CONFIG.data_width {12} CONFIG.memory_type {rom} CONFIG.coefficient_file {C:/Users/aloos/final_current/version_one 1/version_one/images/cloud_paddle.coe}] [get_ips dist_mem_gen_1]
+generate_target {instantiation_template} [get_files {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/dist_mem_gen_1_1/dist_mem_gen_1.xci}}]
+generate_target all [get_files  {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/dist_mem_gen_1_1/dist_mem_gen_1.xci}}]
+catch { config_ip_cache -export [get_ips -all dist_mem_gen_1] }
+export_ip_user_files -of_objects [get_files {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/dist_mem_gen_1_1/dist_mem_gen_1.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/dist_mem_gen_1_1/dist_mem_gen_1.xci}}]
+launch_runs -jobs 8 dist_mem_gen_1_synth_1
+export_simulation -of_objects [get_files {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/dist_mem_gen_1_1/dist_mem_gen_1.xci}}] -directory {C:/Users/aloos/final_current/version_one 1/version_one/version_one.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/aloos/final_current/version_one 1/version_one/version_one.ip_user_files} -ipstatic_source_dir {C:/Users/aloos/final_current/version_one 1/version_one/version_one.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/aloos/final_current/version_one 1/version_one/version_one.cache/compile_simlib/modelsim} {questa=C:/Users/aloos/final_current/version_one 1/version_one/version_one.cache/compile_simlib/questa} {riviera=C:/Users/aloos/final_current/version_one 1/version_one/version_one.cache/compile_simlib/riviera} {activehdl=C:/Users/aloos/final_current/version_one 1/version_one/version_one.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3.xci}}] -no_script -reset -force -quiet
+remove_files  -fileset blk_mem_gen_3 {{C:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3.xci}}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+create_ip -name dist_mem_gen -vendor xilinx.com -library ip -version 8.0 -module_name dist_mem_gen_2 -dir {c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip}
+set_property -dict [list CONFIG.depth {6800} CONFIG.data_width {12} CONFIG.memory_type {rom} CONFIG.coefficient_file {C:/Users/aloos/final_current/version_one 1/version_one/images/blue_heart.coe}] [get_ips dist_mem_gen_2]
+generate_target {instantiation_template} [get_files {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/dist_mem_gen_2/dist_mem_gen_2.xci}}]
+generate_target all [get_files  {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/dist_mem_gen_2/dist_mem_gen_2.xci}}]
+catch { config_ip_cache -export [get_ips -all dist_mem_gen_2] }
+export_ip_user_files -of_objects [get_files {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/dist_mem_gen_2/dist_mem_gen_2.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/dist_mem_gen_2/dist_mem_gen_2.xci}}]
+launch_runs -jobs 8 dist_mem_gen_2_synth_1
+export_simulation -of_objects [get_files {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/dist_mem_gen_2/dist_mem_gen_2.xci}}] -directory {C:/Users/aloos/final_current/version_one 1/version_one/version_one.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/aloos/final_current/version_one 1/version_one/version_one.ip_user_files} -ipstatic_source_dir {C:/Users/aloos/final_current/version_one 1/version_one/version_one.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/aloos/final_current/version_one 1/version_one/version_one.cache/compile_simlib/modelsim} {questa=C:/Users/aloos/final_current/version_one 1/version_one/version_one.cache/compile_simlib/questa} {riviera=C:/Users/aloos/final_current/version_one 1/version_one/version_one.cache/compile_simlib/riviera} {activehdl=C:/Users/aloos/final_current/version_one 1/version_one/version_one.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_0_2/blk_mem_gen_0.xci}}] -no_script -reset -force -quiet
+remove_files  -fileset blk_mem_gen_0 {{C:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/blk_mem_gen_0_2/blk_mem_gen_0.xci}}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/aloos/final_current/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/aloos/final_current/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/aloos/final_current/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/aloos/final_current/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property -dict [list CONFIG.coefficient_file {C:/Users/aloos/final_current/version_one 1/version_one/images/wind_paddle.coe}] [get_ips dist_mem_gen_1]
+generate_target all [get_files  {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/dist_mem_gen_1_1/dist_mem_gen_1.xci}}]
+catch { config_ip_cache -export [get_ips -all dist_mem_gen_1] }
+export_ip_user_files -of_objects [get_files {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/dist_mem_gen_1_1/dist_mem_gen_1.xci}}] -no_script -sync -force -quiet
+reset_run dist_mem_gen_1_synth_1
+launch_runs -jobs 8 dist_mem_gen_1_synth_1
+export_simulation -of_objects [get_files {{c:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/ip/dist_mem_gen_1_1/dist_mem_gen_1.xci}}] -directory {C:/Users/aloos/final_current/version_one 1/version_one/version_one.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/aloos/final_current/version_one 1/version_one/version_one.ip_user_files} -ipstatic_source_dir {C:/Users/aloos/final_current/version_one 1/version_one/version_one.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/aloos/final_current/version_one 1/version_one/version_one.cache/compile_simlib/modelsim} {questa=C:/Users/aloos/final_current/version_one 1/version_one/version_one.cache/compile_simlib/questa} {riviera=C:/Users/aloos/final_current/version_one 1/version_one/version_one.cache/compile_simlib/riviera} {activehdl=C:/Users/aloos/final_current/version_one 1/version_one/version_one.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/aloos/final_current/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/aloos/final_current/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/aloos/final_current/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+export_ip_user_files -of_objects  [get_files {{C:/Users/aloos/final_current/version_one 1/version_one/images/cloud_paddle.coe}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/aloos/final_current/version_one 1/version_one/images/cloud_paddle.coe}}
+add_files -norecurse {{C:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/new/top.v} {C:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/new/iclk_gen.v} {C:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/new/spi_master.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/aloos/final_current/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/aloos/final_current/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/aloos/final_current/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/aloos/final_current/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/aloos/final_current/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/aloos/final_current/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/aloos/final_current/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/aloos/final_current/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/aloos/final_current/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/aloos/final_current/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/aloos/final_current/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/aloos/final_current/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]

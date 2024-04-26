@@ -1,0 +1,121 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Apr 17 14:59:30 2024
+# Process ID: 22508
+# Current directory: C:/Users/aloos/final_current/version_one 1/version_one
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7116 C:\Users\aloos\final_current\version_one 1\version_one\version_one.xpr
+# Log file: C:/Users/aloos/final_current/version_one 1/version_one/vivado.log
+# Journal file: C:/Users/aloos/final_current/version_one 1/version_one\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/aloos/final_current/version_one 1/version_one/version_one.xpr}
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/aloos/final_current/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/aloos/final_current/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+export_ip_user_files -of_objects  [get_files {{C:/Users/aloos/final_current/version_one 1/version_one/images/sparkle_two.coe}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/aloos/final_current/version_one 1/version_one/images/sparkle_one.coe}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/aloos/final_current/version_one 1/version_one/images/purple_orb.coe}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/aloos/final_current/version_one 1/version_one/images/purple_heart.coe}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/aloos/final_current/version_one 1/version_one/images/paddle.coe}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/aloos/final_current/version_one 1/version_one/images/orb_image.coe}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/aloos/final_current/version_one 1/version_one/images/new_orb.coe}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/aloos/final_current/version_one 1/version_one/images/new_heart.coe}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/aloos/final_current/version_one 1/version_one/images/infobar.coe}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/aloos/final_current/version_one 1/version_one/images/id_numbers.coe}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/aloos/final_current/version_one 1/version_one/images/heart_image.coe}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/aloos/final_current/version_one 1/version_one/images/game_name.coe}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/aloos/final_current/version_one 1/version_one/images/game_icon.coe}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/aloos/final_current/version_one 1/version_one/images/cat_image_two.coe}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/aloos/final_current/version_one 1/version_one/images/cat_image_one.coe}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/aloos/final_current/version_one 1/version_one/images/bottompanel.coe}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/aloos/final_current/version_one 1/version_one/images/sparkle_two.coe} {C:/Users/aloos/final_current/version_one 1/version_one/images/sparkle_one.coe} {C:/Users/aloos/final_current/version_one 1/version_one/images/purple_orb.coe} {C:/Users/aloos/final_current/version_one 1/version_one/images/purple_heart.coe} {C:/Users/aloos/final_current/version_one 1/version_one/images/paddle.coe} {C:/Users/aloos/final_current/version_one 1/version_one/images/orb_image.coe} {C:/Users/aloos/final_current/version_one 1/version_one/images/new_orb.coe} {C:/Users/aloos/final_current/version_one 1/version_one/images/new_heart.coe} {C:/Users/aloos/final_current/version_one 1/version_one/images/infobar.coe} {C:/Users/aloos/final_current/version_one 1/version_one/images/id_numbers.coe} {C:/Users/aloos/final_current/version_one 1/version_one/images/heart_image.coe} {C:/Users/aloos/final_current/version_one 1/version_one/images/game_name.coe} {C:/Users/aloos/final_current/version_one 1/version_one/images/game_icon.coe} {C:/Users/aloos/final_current/version_one 1/version_one/images/cat_image_two.coe} {C:/Users/aloos/final_current/version_one 1/version_one/images/cat_image_one.coe} {C:/Users/aloos/final_current/version_one 1/version_one/images/bottompanel.coe}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/aloos/final_current/version_one 1/version_one/images/clouds.coe}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/aloos/final_current/version_one 1/version_one/images/clouds.coe}}
+reset_run synth_1
+reset_run blk_mem_gen_2_synth_1
+reset_run blk_mem_gen_3_synth_1
+reset_run blk_mem_gen_4_synth_1
+reset_run blk_mem_gen_1_synth_1
+reset_run blk_mem_gen_0_synth_1
+reset_run blk_mem_gen_5_synth_1
+reset_run blk_mem_gen_6_synth_1
+reset_run blk_mem_gen_7_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/aloos/final_current/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/aloos/final_current/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/aloos/final_current/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/aloos/final_current/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close [ open {C:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/new/draw_cat_dance.v} w ]
+add_files {{C:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/new/draw_cat_dance.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/new/draw_sparkle.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/new/draw_sparkle.v}}
+close [ open {C:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/new/draw_ball.v} w ]
+add_files {{C:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/new/draw_ball.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/new/tnt_draw.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/aloos/final_current/version_one 1/version_one/version_one.srcs/sources_1/new/tnt_draw.v}}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/aloos/final_current/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/aloos/final_current/version_one 1/version_one/version_one.runs/impl_1/game_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
